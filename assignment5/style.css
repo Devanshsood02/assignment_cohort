@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+   background: linear-gradient(135deg, #2b1b17 0%, #3b2a24 30%, #5a3e36 70%, #ff6f3c 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.main{
+   
+   width: 100%;
+ 
+    padding:50px;
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
+    justify-content:center;
+   
+   
+}
+
+
+
+
+
+/* common card properties*/
+.card{
+    height: 340px;
+    width: 320px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+     box-shadow:4px 4px 10px white;
+     padding: 15px;
+     
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* other styles */
+
+}
+ .card:hover{
+  transform: translateY(-15px); /* lifts the card up */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* stronger shadow for depth */
+  
+}
+    
+ 
+
+
+
+/*card child elements properties*/
+
+.card img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    
+}
+.card p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+}
+
+.card h3{
+   margin-top: 5px;
+font-size: 30px;
+font-weight: 500;
+color: white;
+}
+
+
+
+
+
+/*card bakcground colors properties for separate cards*/
+
+.card1 {
+  background: radial-gradient(ellipse at right top, #01c3a8 0%, #151419 50%, #151419 100%);
+}
+.card2 {
+  background: radial-gradient(ellipse at right top, #1890ff 0%, #151419 50%, #151419 100%);
+}
+.card3 {
+  background: radial-gradient(ellipse at right top, #ffb741 0%, #151419 50%, #151419 100%);
+}
+.card4 {
+  background: radial-gradient(ellipse at right top, #a63d2a 0%, #151419 50%, #151419 100%);
+}
+.card5 {
+  background: radial-gradient(ellipse at right top, #8e44ad 0%, #151419 50%, #151419 100%);
+}
+.card6 {
+  background: radial-gradient(ellipse at right top, #e91e63 0%, #151419 50%, #151419 100%);
+}
+
+
+
+
+/* Common button styles for all cards */
+.card button {
+  border-radius: 15px;
+  padding: 8px 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+
+/* Hover effect with card-specific colors */
+
+
+
+.card1 button:hover {
+  background-color: #01c3a8;
+  color: white;
+}
+
+.card2 button:hover {
+  background-color: #1890ff;
+  color: white;
+}
+
+.card3 button:hover {
+  background-color: #ffb741;
+  color: white;
+}
+
+.card4 button:hover {
+  background-color: #a63d2a;
+  color: white;
+}
+
+.card5 button:hover {
+  background-color: #8e44ad; /* purple example */
+  color: white;
+}
+
+.card6 button:hover {
+  background-color: #e67e22; /* orange example */
+  color: white;
+}
+
+
+.card button:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+/* All paragraphs text color properties*/
+
+
+.card1 p {
+  color: #01c3a8; /* Same as card1 theme */
+}
+
+.card2 p {
+  color: #1890ff; /* Same as card2 theme */
+}
+
+.card3 p {
+  color: #ffb741; /* Same as card3 theme */
+}
+
+.card4 p {
+  color: #a63d2a; /* Same as card4 theme */
+}
+
+.card5 p {
+  color: #8e44ad; /* Example purple */
+}
+
+.card6 p {
+  color: #e67e22; /* Example orange */
+}
+
+
+
+.card:hover p {
+  color: white;
+}
